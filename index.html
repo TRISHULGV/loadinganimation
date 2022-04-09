@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Transition</title>
+    <style>
+        .logo{
+            background: url(logo.png) no-repeat center center / cover;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 45%;
+            left: 45%;
+            animation: animate1 0.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes animate1{
+            100%{
+                transform: translateY(-50px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo"></div>
+</body>
+</html>
